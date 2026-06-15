@@ -260,6 +260,25 @@
             background: #000;
         }
 
+.button-row {
+    display: flex;
+    gap: 15px;       
+    margin-top: 20px;
+}
+
+
+.button-row .submit-btn {
+    flex: 1;
+    margin-top: 0;   
+}
+
+@media (max-width: 480px) {
+    .button-row {
+        flex-direction: column; /* Se apilan uno abajo del otro en pantallas muy chicas */
+        gap: 10px;
+    }
+}
+
         @media (max-width: 600px) {
             .container {
                 padding: 30px 20px;
@@ -474,16 +493,17 @@
                     </div>
                 </div>
             </div>
-
-            <button type="submit" id="submitBtn" class="submit-btn">
-                <span class="lang-text" data-lang="es">Enviar Aplicación</span>
-                <span class="lang-text hidden-text" data-lang="en">Submit Application</span>
-            </button>
-            <button type="button" class="submit-btn" onclick="goHome()">
-                <span class="lang-text" data-lang="es">Volver a la página</span>
-                <span class="lang-text hidden-text" data-lang="en">Back to page</span>
-            </button>
-
+<div class="button-row">
+    <button type="submit" id="submitBtn" class="submit-btn">
+        <span class="lang-text" data-lang="es">Enviar Aplicación</span>
+        <span class="lang-text hidden-text" data-lang="en">Submit Application</span>
+    </button>
+    
+    <button type="button"  onclick="goHome()">
+        <span class="lang-text" data-lang="es">Volver a la página</span>
+        <span class="lang-text hidden-text" data-lang="en">Back to page</span>
+    </button>
+</div>
         </form>
 
         <p class="footer-note">© 2026 La Realeza Inc LLC. All rights reserved</p>
