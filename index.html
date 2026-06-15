@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -263,12 +264,14 @@
             .container {
                 padding: 30px 20px;
             }
+
             .logo {
                 width: 140px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="language-switcher">
         <button class="lang-btn active" data-lang="es">Español</button>
@@ -342,21 +345,24 @@
                 </label>
                 <div class="radio-group">
                     <div class="radio-option">
-                        <input type="radio" id="compositor" name="definicion" value="Compositor" required onchange="toggleMusicField()">
+                        <input type="radio" id="compositor" name="definicion" value="Compositor" required
+                            onchange="toggleMusicField()">
                         <label for="compositor">
                             <span class="lang-text" data-lang="es">Compositor</span>
                             <span class="lang-text hidden-text" data-lang="en">Composer</span>
                         </label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="artista" name="definicion" value="Artista" required onchange="toggleMusicField()">
+                        <input type="radio" id="artista" name="definicion" value="Artista" required
+                            onchange="toggleMusicField()">
                         <label for="artista">
                             <span class="lang-text" data-lang="es">Artista</span>
                             <span class="lang-text hidden-text" data-lang="en">Artist</span>
                         </label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="ambos" name="definicion" value="Ambos" required onchange="toggleMusicField()">
+                        <input type="radio" id="ambos" name="definicion" value="Ambos" required
+                            onchange="toggleMusicField()">
                         <label for="ambos">
                             <span class="lang-text" data-lang="es">Ambos</span>
                             <span class="lang-text hidden-text" data-lang="en">Both</span>
@@ -367,8 +373,10 @@
 
             <div class="form-group hidden" id="composerMusicField">
                 <label for="cancion-composer">
-                    <span class="lang-text" data-lang="es">Comparte 1 canción donde hayas participado como compositor</span>
-                    <span class="lang-text hidden-text" data-lang="en">Share 1 song where you participated as a composer</span>
+                    <span class="lang-text" data-lang="es">Comparte 1 canción donde hayas participado como
+                        compositor</span>
+                    <span class="lang-text hidden-text" data-lang="en">Share 1 song where you participated as a
+                        composer</span>
                     <span class="required">*</span>
                 </label>
                 <input type="url" id="cancion-composer" name="cancion_compositor" placeholder="https://...">
@@ -386,7 +394,8 @@
             <div class="form-group">
                 <label>
                     <span class="lang-text" data-lang="es">¿Estás afiliado a una PRO (ASCAP, BMI, etc.)?</span>
-                    <span class="lang-text hidden-text" data-lang="en">Are you affiliated with a PRO (ASCAP, BMI, etc.)?</span>
+                    <span class="lang-text hidden-text" data-lang="en">Are you affiliated with a PRO (ASCAP, BMI,
+                        etc.)?</span>
                     <span class="required">*</span>
                 </label>
                 <div class="radio-group">
@@ -415,21 +424,24 @@
                 </label>
                 <div class="radio-group">
                     <div class="radio-option">
-                        <input type="radio" id="derechos_total" name="derechos" value="Sí, soy dueño total / Yes, I am total owner" required>
+                        <input type="radio" id="derechos_total" name="derechos"
+                            value="Sí, soy dueño total / Yes, I am total owner" required>
                         <label for="derechos_total">
                             <span class="lang-text" data-lang="es">Sí, soy dueño total</span>
                             <span class="lang-text hidden-text" data-lang="en">Yes, I am total owner</span>
                         </label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="derechos_parcial" name="derechos" value="Parcial (splits) / Partial (splits)" required>
+                        <input type="radio" id="derechos_parcial" name="derechos"
+                            value="Parcial (splits) / Partial (splits)" required>
                         <label for="derechos_parcial">
                             <span class="lang-text" data-lang="es">Parcial (splits)</span>
                             <span class="lang-text hidden-text" data-lang="en">Partial (splits)</span>
                         </label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="derechos_inseguro" name="derechos" value="No estoy seguro / I'm not sure" required>
+                        <input type="radio" id="derechos_inseguro" name="derechos"
+                            value="No estoy seguro / I'm not sure" required>
                         <label for="derechos_inseguro">
                             <span class="lang-text" data-lang="es">No estoy seguro</span>
                             <span class="lang-text hidden-text" data-lang="en">I'm not sure</span>
@@ -441,7 +453,8 @@
             <div class="form-group">
                 <label>
                     <span class="lang-text" data-lang="es">¿Estás interesado en firmar un acuerdo editorial?</span>
-                    <span class="lang-text hidden-text" data-lang="en">Are you interested in signing a publishing agreement?</span>
+                    <span class="lang-text hidden-text" data-lang="en">Are you interested in signing a publishing
+                        agreement?</span>
                     <span class="required">*</span>
                 </label>
                 <div class="radio-group">
@@ -466,6 +479,11 @@
                 <span class="lang-text" data-lang="es">Enviar Aplicación</span>
                 <span class="lang-text hidden-text" data-lang="en">Submit Application</span>
             </button>
+            <button type="button" class="submit-btn" onclick="goHome()">
+                <span class="lang-text" data-lang="es">Volver a la página</span>
+                <span class="lang-text hidden-text" data-lang="en">Back to page</span>
+            </button>
+
         </form>
 
         <p class="footer-note">© 2026 La Realeza Inc LLC. All rights reserved</p>
@@ -480,10 +498,12 @@
                 <span class="lang-text hidden-text" data-lang="en">Successfully Sent!</span>
             </h2>
             <p>
-                <span class="lang-text" data-lang="es">Tu aplicación ha sido recibida correctamente. Nos pondremos en contacto contigo pronto.</span>
-                <span class="lang-text hidden-text" data-lang="en">Your application has been received successfully. We will get in touch with you soon.</span>
+                <span class="lang-text" data-lang="es">Tu aplicación ha sido recibida correctamente. Nos pondremos en
+                    contacto contigo pronto.</span>
+                <span class="lang-text hidden-text" data-lang="en">Your application has been received successfully. We
+                    will get in touch with you soon.</span>
             </p>
-            <a href="https://larealezapublishing.com/" class="modal-btn">
+            <a onclick="goHome()" class="modal-btn">
                 <span class="lang-text" data-lang="es">Volver a la página</span>
                 <span class="lang-text hidden-text" data-lang="en">Back to page</span>
             </a>
@@ -491,6 +511,11 @@
     </div>
 
     <script>
+        function goHome() {
+            window.location.href = "https://larealezapublishing.com/";
+        }
+
+
         let currentLang = 'es';
 
         // Cambiar idioma de los elementos de texto y mantener el estado
@@ -505,7 +530,7 @@
         }
 
         document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 currentLang = this.getAttribute('data-lang');
                 document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
@@ -542,13 +567,13 @@
         }
 
         // Interceptar el envío del formulario para procesarlo con AJAX y mostrar el popup
-        document.getElementById('publishingForm').addEventListener('submit', function(e) {
+        document.getElementById('publishingForm').addEventListener('submit', function (e) {
             e.preventDefault(); // Evita la redirección por defecto de Formspree
-            
+
             const form = this;
             const submitButton = document.getElementById('submitBtn');
             const data = new FormData(form);
-            
+
             // Deshabilitar botón visualmente mientras procesa
             submitButton.disabled = true;
             submitButton.style.opacity = "0.5";
@@ -582,10 +607,11 @@
             });
         });
 
-        window.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('DOMContentLoaded', function () {
             document.querySelector('[data-lang="es"]').classList.add('active');
             updateLanguageElements();
         });
     </script>
 </body>
+
 </html>
